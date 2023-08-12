@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<TriggernometryExport Version="1">
+  <ExportedTrigger Enabled="true" Name="End Encounter" Id="72564c2a-ea98-45ee-8344-4948af4a83f8" RegularExpression="^.{14} Director 21:.{8}:400000(0F|1[31])">
+    <Actions>
+      <Action OrderNumber="1" ActionType="EndEncounter">
+        <Condition Enabled="false" Grouping="Or" />
+      </Action>
+    </Actions>
+    <Condition Enabled="false" Grouping="Or" />
+  </ExportedTrigger>
+</TriggernometryExport>
