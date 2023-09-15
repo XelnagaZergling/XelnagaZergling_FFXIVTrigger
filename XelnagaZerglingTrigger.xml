@@ -1269,7 +1269,7 @@
                                       <Folder Id="272ae0bf-41fb-458d-bc35-b83f18d120fe" Name="target mark" Enabled="true">
                                         <Folders />
                                         <Triggers>
-                                          <Trigger Enabled="true" Sequential="True" Name="*実行mark" Id="66ac6c40-4eb8-40bc-9aeb-1bc109c1f089" RegularExpression="^.{14} TargetIcon 1B:.{8}:(?&lt;name&gt;.+?):.*:.*:0206:">
+                                          <Trigger Enabled="true" Sequential="True" Name="*実行mark" Id="66ac6c40-4eb8-40bc-9aeb-1bc109c1f089" RegularExpression="^.{14} TargetIcon 1B:.{8}:(?&lt;name&gt;.+?):.*:.*:(01E6|01EC):">
                                             <Actions>
                                               <Action OrderNumber="1" TriggerId="3060558b-dda1-4bc0-98df-856306ef514b" TriggerForce="regexp" ActionType="Trigger" ExecutionDelayExpression="50">
                                                 <Condition Enabled="true" Grouping="Or">
@@ -1772,42 +1772,45 @@
                                   <Action OrderNumber="7" ListVariableName="誘風" ActionType="ListVariable">
                                     <Condition Enabled="false" Grouping="Or" />
                                   </Action>
-                                  <Action OrderNumber="8" JsonEndpointExpression="http://127.0.0.1:${var:鲶鱼精邮差监听端口}/command" JsonPayloadExpression="/mk attack &lt;${var:${var:d1_name}_no}&gt;" NamedCallbackName="command" NamedCallbackParam="/mk attack1 &lt;attack1&gt;" UseTTSTextExpression="准备组内截球" ActionType="NamedCallback" ExecutionDelayExpression="55000">
+                                  <Action OrderNumber="8" FolderOp="DisableFolder" FolderId="e061d19c-5749-42dc-bccd-d5d400855a1e" TriggerOp="DisableTrigger" TriggerId="d0299401-2e1b-4ea3-be38-dc44d2649cc9" ActionType="Trigger" ExecutionDelayExpression="55000">
+                                    <Condition Enabled="false" Grouping="Or" />
+                                  </Action>
+                                  <Action OrderNumber="9" JsonEndpointExpression="http://127.0.0.1:${var:鲶鱼精邮差监听端口}/command" JsonPayloadExpression="/mk attack &lt;${var:${var:d1_name}_no}&gt;" NamedCallbackName="command" NamedCallbackParam="/mk attack1 &lt;attack1&gt;" UseTTSTextExpression="准备组内截球" ActionType="NamedCallback">
                                     <Condition Enabled="false" Grouping="And">
                                       <ConditionSingle Enabled="true" ExpressionL="${var:st_桶}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                                     </Condition>
                                   </Action>
-                                  <Action OrderNumber="9" JsonEndpointExpression="http://127.0.0.1:${var:鲶鱼精邮差监听端口}/command" JsonPayloadExpression="/mk attack &lt;${var:${var:d1_name}_no}&gt;" NamedCallbackName="command" NamedCallbackParam="/mk attack2 &lt;attack2&gt;" UseTTSTextExpression="准备组内截球" ActionType="NamedCallback">
+                                  <Action OrderNumber="10" JsonEndpointExpression="http://127.0.0.1:${var:鲶鱼精邮差监听端口}/command" JsonPayloadExpression="/mk attack &lt;${var:${var:d1_name}_no}&gt;" NamedCallbackName="command" NamedCallbackParam="/mk attack2 &lt;attack2&gt;" UseTTSTextExpression="准备组内截球" ActionType="NamedCallback">
                                     <Condition Enabled="false" Grouping="And">
                                       <ConditionSingle Enabled="true" ExpressionL="${var:st_桶}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                                     </Condition>
                                   </Action>
-                                  <Action OrderNumber="10" JsonEndpointExpression="http://127.0.0.1:${var:鲶鱼精邮差监听端口}/command" JsonPayloadExpression="/mk attack &lt;${var:${var:d1_name}_no}&gt;" NamedCallbackName="command" NamedCallbackParam="/mk attack3 &lt;attack3&gt;" UseTTSTextExpression="准备组内截球" ActionType="NamedCallback">
+                                  <Action OrderNumber="11" JsonEndpointExpression="http://127.0.0.1:${var:鲶鱼精邮差监听端口}/command" JsonPayloadExpression="/mk attack &lt;${var:${var:d1_name}_no}&gt;" NamedCallbackName="command" NamedCallbackParam="/mk attack3 &lt;attack3&gt;" UseTTSTextExpression="准备组内截球" ActionType="NamedCallback">
                                     <Condition Enabled="false" Grouping="And">
                                       <ConditionSingle Enabled="true" ExpressionL="${var:st_桶}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                                     </Condition>
                                   </Action>
-                                  <Action OrderNumber="11" JsonEndpointExpression="http://127.0.0.1:${var:鲶鱼精邮差监听端口}/command" JsonPayloadExpression="/mk attack &lt;${var:${var:d1_name}_no}&gt;" NamedCallbackName="command" NamedCallbackParam="/mk attack4 &lt;attack4&gt;" UseTTSTextExpression="准备组内截球" ActionType="NamedCallback">
+                                  <Action OrderNumber="12" JsonEndpointExpression="http://127.0.0.1:${var:鲶鱼精邮差监听端口}/command" JsonPayloadExpression="/mk attack &lt;${var:${var:d1_name}_no}&gt;" NamedCallbackName="command" NamedCallbackParam="/mk attack4 &lt;attack4&gt;" UseTTSTextExpression="准备组内截球" ActionType="NamedCallback">
                                     <Condition Enabled="false" Grouping="And">
                                       <ConditionSingle Enabled="true" ExpressionL="${var:st_桶}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                                     </Condition>
                                   </Action>
-                                  <Action OrderNumber="12" JsonEndpointExpression="http://127.0.0.1:${var:鲶鱼精邮差监听端口}/command" JsonPayloadExpression="/mk attack &lt;${var:${var:d1_name}_no}&gt;" NamedCallbackName="command" NamedCallbackParam="/mk bind1 &lt;bind1&gt;" UseTTSTextExpression="准备组内截球" ActionType="NamedCallback">
+                                  <Action OrderNumber="13" JsonEndpointExpression="http://127.0.0.1:${var:鲶鱼精邮差监听端口}/command" JsonPayloadExpression="/mk attack &lt;${var:${var:d1_name}_no}&gt;" NamedCallbackName="command" NamedCallbackParam="/mk bind1 &lt;bind1&gt;" UseTTSTextExpression="准备组内截球" ActionType="NamedCallback">
                                     <Condition Enabled="false" Grouping="And">
                                       <ConditionSingle Enabled="true" ExpressionL="${var:st_桶}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                                     </Condition>
                                   </Action>
-                                  <Action OrderNumber="13" JsonEndpointExpression="http://127.0.0.1:${var:鲶鱼精邮差监听端口}/command" JsonPayloadExpression="/mk attack &lt;${var:${var:d1_name}_no}&gt;" NamedCallbackName="command" NamedCallbackParam="/mk bind2 &lt;bind2&gt;" UseTTSTextExpression="准备组内截球" ActionType="NamedCallback">
+                                  <Action OrderNumber="14" JsonEndpointExpression="http://127.0.0.1:${var:鲶鱼精邮差监听端口}/command" JsonPayloadExpression="/mk attack &lt;${var:${var:d1_name}_no}&gt;" NamedCallbackName="command" NamedCallbackParam="/mk bind2 &lt;bind2&gt;" UseTTSTextExpression="准备组内截球" ActionType="NamedCallback">
                                     <Condition Enabled="false" Grouping="And">
                                       <ConditionSingle Enabled="true" ExpressionL="${var:st_桶}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                                     </Condition>
                                   </Action>
-                                  <Action OrderNumber="14" JsonEndpointExpression="http://127.0.0.1:${var:鲶鱼精邮差监听端口}/command" JsonPayloadExpression="/mk attack &lt;${var:${var:d1_name}_no}&gt;" NamedCallbackName="command" NamedCallbackParam="/mk stop1 &lt;stop1&gt;" UseTTSTextExpression="准备组内截球" ActionType="NamedCallback">
+                                  <Action OrderNumber="15" JsonEndpointExpression="http://127.0.0.1:${var:鲶鱼精邮差监听端口}/command" JsonPayloadExpression="/mk attack &lt;${var:${var:d1_name}_no}&gt;" NamedCallbackName="command" NamedCallbackParam="/mk stop1 &lt;stop1&gt;" UseTTSTextExpression="准备组内截球" ActionType="NamedCallback">
                                     <Condition Enabled="false" Grouping="And">
                                       <ConditionSingle Enabled="true" ExpressionL="${var:st_桶}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                                     </Condition>
                                   </Action>
-                                  <Action OrderNumber="15" JsonEndpointExpression="http://127.0.0.1:${var:鲶鱼精邮差监听端口}/command" JsonPayloadExpression="/mk attack &lt;${var:${var:d1_name}_no}&gt;" NamedCallbackName="command" NamedCallbackParam="/mk stop2 &lt;stop2&gt;" UseTTSTextExpression="准备组内截球" ActionType="NamedCallback">
+                                  <Action OrderNumber="16" JsonEndpointExpression="http://127.0.0.1:${var:鲶鱼精邮差监听端口}/command" JsonPayloadExpression="/mk attack &lt;${var:${var:d1_name}_no}&gt;" NamedCallbackName="command" NamedCallbackParam="/mk stop2 &lt;stop2&gt;" UseTTSTextExpression="准备组内截球" ActionType="NamedCallback">
                                     <Condition Enabled="false" Grouping="And">
                                       <ConditionSingle Enabled="true" ExpressionL="${var:st_桶}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                                     </Condition>
@@ -1852,7 +1855,6 @@
                                   </Action>
                                 </Actions>
                                 <Condition Enabled="false" Grouping="Or" />
-                                <Conditions />
                               </Trigger>
                             </Triggers>
                           </Folder>
@@ -1878,42 +1880,45 @@
                               <Action OrderNumber="6" FolderId="e061d19c-5749-42dc-bccd-d5d400855a1e" ActionType="Folder">
                                 <Condition Enabled="false" Grouping="Or" />
                               </Action>
-                              <Action OrderNumber="7" JsonEndpointExpression="http://127.0.0.1:${var:鲶鱼精邮差监听端口}/command" JsonPayloadExpression="/mk attack &lt;${var:${var:d1_name}_no}&gt;" NamedCallbackName="command" NamedCallbackParam="/mk attack1 &lt;attack1&gt;" UseTTSTextExpression="准备组内截球" ActionType="NamedCallback" ExecutionDelayExpression="3000">
+                              <Action OrderNumber="7" FolderOp="DisableFolder" FolderId="e061d19c-5749-42dc-bccd-d5d400855a1e" TriggerOp="EnableTrigger" TriggerId="d0299401-2e1b-4ea3-be38-dc44d2649cc9" ActionType="Trigger">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="8" JsonEndpointExpression="http://127.0.0.1:${var:鲶鱼精邮差监听端口}/command" JsonPayloadExpression="/mk attack &lt;${var:${var:d1_name}_no}&gt;" NamedCallbackName="command" NamedCallbackParam="/mk attack1 &lt;attack1&gt;" UseTTSTextExpression="准备组内截球" ActionType="NamedCallback" ExecutionDelayExpression="3000">
                                 <Condition Enabled="false" Grouping="And">
                                   <ConditionSingle Enabled="true" ExpressionL="${var:st_桶}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                                 </Condition>
                               </Action>
-                              <Action OrderNumber="8" JsonEndpointExpression="http://127.0.0.1:${var:鲶鱼精邮差监听端口}/command" JsonPayloadExpression="/mk attack &lt;${var:${var:d1_name}_no}&gt;" NamedCallbackName="command" NamedCallbackParam="/mk attack2 &lt;attack2&gt;" UseTTSTextExpression="准备组内截球" ActionType="NamedCallback">
+                              <Action OrderNumber="9" JsonEndpointExpression="http://127.0.0.1:${var:鲶鱼精邮差监听端口}/command" JsonPayloadExpression="/mk attack &lt;${var:${var:d1_name}_no}&gt;" NamedCallbackName="command" NamedCallbackParam="/mk attack2 &lt;attack2&gt;" UseTTSTextExpression="准备组内截球" ActionType="NamedCallback">
                                 <Condition Enabled="false" Grouping="And">
                                   <ConditionSingle Enabled="true" ExpressionL="${var:st_桶}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                                 </Condition>
                               </Action>
-                              <Action OrderNumber="9" JsonEndpointExpression="http://127.0.0.1:${var:鲶鱼精邮差监听端口}/command" JsonPayloadExpression="/mk attack &lt;${var:${var:d1_name}_no}&gt;" NamedCallbackName="command" NamedCallbackParam="/mk attack3 &lt;attack3&gt;" UseTTSTextExpression="准备组内截球" ActionType="NamedCallback">
+                              <Action OrderNumber="10" JsonEndpointExpression="http://127.0.0.1:${var:鲶鱼精邮差监听端口}/command" JsonPayloadExpression="/mk attack &lt;${var:${var:d1_name}_no}&gt;" NamedCallbackName="command" NamedCallbackParam="/mk attack3 &lt;attack3&gt;" UseTTSTextExpression="准备组内截球" ActionType="NamedCallback">
                                 <Condition Enabled="false" Grouping="And">
                                   <ConditionSingle Enabled="true" ExpressionL="${var:st_桶}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                                 </Condition>
                               </Action>
-                              <Action OrderNumber="10" JsonEndpointExpression="http://127.0.0.1:${var:鲶鱼精邮差监听端口}/command" JsonPayloadExpression="/mk attack &lt;${var:${var:d1_name}_no}&gt;" NamedCallbackName="command" NamedCallbackParam="/mk attack4 &lt;attack4&gt;" UseTTSTextExpression="准备组内截球" ActionType="NamedCallback">
+                              <Action OrderNumber="11" JsonEndpointExpression="http://127.0.0.1:${var:鲶鱼精邮差监听端口}/command" JsonPayloadExpression="/mk attack &lt;${var:${var:d1_name}_no}&gt;" NamedCallbackName="command" NamedCallbackParam="/mk attack4 &lt;attack4&gt;" UseTTSTextExpression="准备组内截球" ActionType="NamedCallback">
                                 <Condition Enabled="false" Grouping="And">
                                   <ConditionSingle Enabled="true" ExpressionL="${var:st_桶}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                                 </Condition>
                               </Action>
-                              <Action OrderNumber="11" JsonEndpointExpression="http://127.0.0.1:${var:鲶鱼精邮差监听端口}/command" JsonPayloadExpression="/mk attack &lt;${var:${var:d1_name}_no}&gt;" NamedCallbackName="command" NamedCallbackParam="/mk bind1 &lt;bind1&gt;" UseTTSTextExpression="准备组内截球" ActionType="NamedCallback">
+                              <Action OrderNumber="12" JsonEndpointExpression="http://127.0.0.1:${var:鲶鱼精邮差监听端口}/command" JsonPayloadExpression="/mk attack &lt;${var:${var:d1_name}_no}&gt;" NamedCallbackName="command" NamedCallbackParam="/mk bind1 &lt;bind1&gt;" UseTTSTextExpression="准备组内截球" ActionType="NamedCallback">
                                 <Condition Enabled="false" Grouping="And">
                                   <ConditionSingle Enabled="true" ExpressionL="${var:st_桶}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                                 </Condition>
                               </Action>
-                              <Action OrderNumber="12" JsonEndpointExpression="http://127.0.0.1:${var:鲶鱼精邮差监听端口}/command" JsonPayloadExpression="/mk attack &lt;${var:${var:d1_name}_no}&gt;" NamedCallbackName="command" NamedCallbackParam="/mk bind2 &lt;bind2&gt;" UseTTSTextExpression="准备组内截球" ActionType="NamedCallback">
+                              <Action OrderNumber="13" JsonEndpointExpression="http://127.0.0.1:${var:鲶鱼精邮差监听端口}/command" JsonPayloadExpression="/mk attack &lt;${var:${var:d1_name}_no}&gt;" NamedCallbackName="command" NamedCallbackParam="/mk bind2 &lt;bind2&gt;" UseTTSTextExpression="准备组内截球" ActionType="NamedCallback">
                                 <Condition Enabled="false" Grouping="And">
                                   <ConditionSingle Enabled="true" ExpressionL="${var:st_桶}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                                 </Condition>
                               </Action>
-                              <Action OrderNumber="13" JsonEndpointExpression="http://127.0.0.1:${var:鲶鱼精邮差监听端口}/command" JsonPayloadExpression="/mk attack &lt;${var:${var:d1_name}_no}&gt;" NamedCallbackName="command" NamedCallbackParam="/mk stop1 &lt;stop1&gt;" UseTTSTextExpression="准备组内截球" ActionType="NamedCallback">
+                              <Action OrderNumber="14" JsonEndpointExpression="http://127.0.0.1:${var:鲶鱼精邮差监听端口}/command" JsonPayloadExpression="/mk attack &lt;${var:${var:d1_name}_no}&gt;" NamedCallbackName="command" NamedCallbackParam="/mk stop1 &lt;stop1&gt;" UseTTSTextExpression="准备组内截球" ActionType="NamedCallback">
                                 <Condition Enabled="false" Grouping="And">
                                   <ConditionSingle Enabled="true" ExpressionL="${var:st_桶}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                                 </Condition>
                               </Action>
-                              <Action OrderNumber="14" JsonEndpointExpression="http://127.0.0.1:${var:鲶鱼精邮差监听端口}/command" JsonPayloadExpression="/mk attack &lt;${var:${var:d1_name}_no}&gt;" NamedCallbackName="command" NamedCallbackParam="/mk stop2 &lt;stop2&gt;" UseTTSTextExpression="准备组内截球" ActionType="NamedCallback">
+                              <Action OrderNumber="15" JsonEndpointExpression="http://127.0.0.1:${var:鲶鱼精邮差监听端口}/command" JsonPayloadExpression="/mk attack &lt;${var:${var:d1_name}_no}&gt;" NamedCallbackName="command" NamedCallbackParam="/mk stop2 &lt;stop2&gt;" UseTTSTextExpression="准备组内截球" ActionType="NamedCallback">
                                 <Condition Enabled="false" Grouping="And">
                                   <ConditionSingle Enabled="true" ExpressionL="${var:st_桶}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                                 </Condition>
@@ -2139,19 +2144,19 @@
               <Action OrderNumber="5" ActionType="Placeholder">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
-              <Action OrderNumber="6" VariableOp="SetString" VariableName="channel" VariableExpression="e" ActionType="Variable">
+              <Action OrderNumber="6" VariableOp="SetString" VariableName="channel" VariableExpression="e" Enabled="False" ActionType="Variable">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
-              <Action OrderNumber="7" VariableOp="SetString" VariableName="channel" VariableExpression="p" Enabled="False" ActionType="Variable">
+              <Action OrderNumber="7" VariableOp="SetString" VariableName="channel" VariableExpression="p" ActionType="Variable">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
               <Action OrderNumber="8" ActionType="Placeholder">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
-              <Action OrderNumber="9" VariableOp="SetNumeric" VariableName="job" VariableExpression="1" Enabled="False" ActionType="Variable">
+              <Action OrderNumber="9" VariableOp="SetNumeric" VariableName="job" VariableExpression="1" ActionType="Variable">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
-              <Action OrderNumber="10" VariableOp="SetNumeric" VariableName="id" VariableExpression="1" ActionType="Variable">
+              <Action OrderNumber="10" VariableOp="SetNumeric" VariableName="id" VariableExpression="1" Enabled="False" ActionType="Variable">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
               <Action OrderNumber="11" ActionType="Placeholder">
