@@ -1815,6 +1815,45 @@
                                 </Actions>
                                 <Condition Enabled="false" Grouping="Or" />
                               </Trigger>
+                              <Trigger Enabled="false" Name="test" Id="6ca7de72-1e4d-4b8e-b7f7-aa0637dbc7a6" RegularExpression="">
+                                <Actions>
+                                  <Action OrderNumber="1" LogMessageText="[23:58:24.976] TargetIcon 1B:10000000:${var:party_name_4}:0000:0000:0206:0000:0000:0000" LogProcess="True" ActionType="LogMessage">
+                                    <Condition Enabled="false" Grouping="Or" />
+                                  </Action>
+                                  <Action OrderNumber="2" LogMessageText="[23:58:24.976] TargetIcon 1B:10000000:${var:party_name_5}:0000:0000:0206:0000:0000:0000" LogProcess="True" ActionType="LogMessage">
+                                    <Condition Enabled="false" Grouping="Or" />
+                                  </Action>
+                                  <Action OrderNumber="3" LogMessageText="[23:58:25.065] StartsCasting 14:40011FD7:パラスアテナ:8338:カロリックセオリー:40011FD7:パラスアテ" LogProcess="True" ActionType="LogMessage" ExecutionDelayExpression="100">
+                                    <Condition Enabled="false" Grouping="Or" />
+                                  </Action>
+                                  <Action OrderNumber="4" LogMessageText="[23:58:33.797] StatusAdd 1A:E07:誘風の兆し:23.00:E0000000::10000000:${var:party_name_4}:" LogProcess="True" ActionType="LogMessage" ExecutionDelayExpression="8800">
+                                    <Condition Enabled="false" Grouping="Or" />
+                                  </Action>
+                                  <Action OrderNumber="5" LogMessageText="[23:58:33.797] StatusAdd 1A:E07:誘風の兆し:23.00:E0000000::10000000:${var:party_name_5}:" LogProcess="True" ActionType="LogMessage">
+                                    <Condition Enabled="false" Grouping="Or" />
+                                  </Action>
+                                  <Action OrderNumber="6" LogMessageText="[23:58:33.797] StatusAdd 1A:E07:誘風の兆し:23.00:E0000000::10000000:${var:party_name_6}:" LogProcess="True" ActionType="LogMessage">
+                                    <Condition Enabled="false" Grouping="Or" />
+                                  </Action>
+                                  <Action OrderNumber="7" LogMessageText="[23:58:33.797] StatusAdd 1A:E07:誘風の兆し:23.00:E0000000::10000000:${var:party_name_1}:" LogProcess="True" ActionType="LogMessage">
+                                    <Condition Enabled="false" Grouping="Or" />
+                                  </Action>
+                                  <Action OrderNumber="8" LogMessageText="[23:58:33.797] StatusAdd 1A:E06:重火の兆し:12.00:E0000000::10000000:${var:party_name_3}:" LogProcess="True" ActionType="LogMessage">
+                                    <Condition Enabled="false" Grouping="Or" />
+                                  </Action>
+                                  <Action OrderNumber="9" LogMessageText="[23:58:33.797] StatusAdd 1A:E06:重火の兆し:12.00:E0000000::10000000:${var:party_name_2}:" LogProcess="True" ActionType="LogMessage">
+                                    <Condition Enabled="false" Grouping="Or" />
+                                  </Action>
+                                  <Action OrderNumber="10" LogMessageText="[23:58:33.797] StatusAdd 1A:E06:重火の兆し:12.00:E0000000::10000000:${var:party_name_8}:" LogProcess="True" ActionType="LogMessage">
+                                    <Condition Enabled="false" Grouping="Or" />
+                                  </Action>
+                                  <Action OrderNumber="11" LogMessageText="[23:58:33.797] StatusAdd 1A:E06:重火の兆し:12.00:E0000000::10000000:${var:party_name_7}:" LogProcess="True" ActionType="LogMessage">
+                                    <Condition Enabled="false" Grouping="Or" />
+                                  </Action>
+                                </Actions>
+                                <Condition Enabled="false" Grouping="Or" />
+                                <Conditions />
+                              </Trigger>
                             </Triggers>
                           </Folder>
                         </Folders>
@@ -2106,16 +2145,22 @@
               <Action OrderNumber="7" VariableOp="SetString" VariableName="channel" VariableExpression="p" Enabled="False" ActionType="Variable">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
-              <Action OrderNumber="8" VariableOp="SetNumeric" VariableName="job" VariableExpression="1" Enabled="False" ActionType="Variable">
+              <Action OrderNumber="8" ActionType="Placeholder">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
-              <Action OrderNumber="9" VariableOp="SetNumeric" VariableName="id" VariableExpression="1" ActionType="Variable">
+              <Action OrderNumber="9" VariableOp="SetNumeric" VariableName="job" VariableExpression="1" Enabled="False" ActionType="Variable">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
-              <Action OrderNumber="10" VariableOp="SetNumeric" VariableName="mark" VariableExpression="0" ActionType="Variable">
+              <Action OrderNumber="10" VariableOp="SetNumeric" VariableName="id" VariableExpression="1" ActionType="Variable">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
-              <Action OrderNumber="11" VariableOp="SetNumeric" VariableName="mark" VariableExpression="1" Enabled="False" ActionType="Variable">
+              <Action OrderNumber="11" ActionType="Placeholder">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="12" VariableOp="SetNumeric" VariableName="mark" VariableExpression="0" Enabled="False" ActionType="Variable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="13" VariableOp="SetNumeric" VariableName="mark" VariableExpression="1" ActionType="Variable">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
             </Actions>
@@ -2124,44 +2169,6 @@
           <Trigger Enabled="true" Name="end encounter" Id="a40f62ae-05df-4b46-8e22-12cc591652a1" RegularExpression="^.{14} Director 21:.{8}:400000(0F|1[31])">
             <Actions>
               <Action OrderNumber="1" ActionType="EndEncounter">
-                <Condition Enabled="false" Grouping="Or" />
-              </Action>
-            </Actions>
-            <Condition Enabled="false" Grouping="Or" />
-          </Trigger>
-          <Trigger Enabled="false" Name="test" Id="35188fbf-ebbc-4a78-adc7-bcb8688101f8" RegularExpression="">
-            <Actions>
-              <Action OrderNumber="1" LogMessageText="[23:58:24.976] TargetIcon 1B:10000000:${var:party_name_4}:0000:0000:0206:0000:0000:0000" LogProcess="True" ActionType="LogMessage">
-                <Condition Enabled="false" Grouping="Or" />
-              </Action>
-              <Action OrderNumber="2" LogMessageText="[23:58:24.976] TargetIcon 1B:10000000:${var:party_name_5}:0000:0000:0206:0000:0000:0000" LogProcess="True" ActionType="LogMessage">
-                <Condition Enabled="false" Grouping="Or" />
-              </Action>
-              <Action OrderNumber="3" LogMessageText="[23:58:25.065] StartsCasting 14:40011FD7:パラスアテナ:8338:カロリックセオリー:40011FD7:パラスアテ" LogProcess="True" ActionType="LogMessage" ExecutionDelayExpression="100">
-                <Condition Enabled="false" Grouping="Or" />
-              </Action>
-              <Action OrderNumber="4" LogMessageText="[23:58:33.797] StatusAdd 1A:E07:誘風の兆し:23.00:E0000000::10000000:${var:party_name_4}:" LogProcess="True" ActionType="LogMessage" ExecutionDelayExpression="8800">
-                <Condition Enabled="false" Grouping="Or" />
-              </Action>
-              <Action OrderNumber="5" LogMessageText="[23:58:33.797] StatusAdd 1A:E07:誘風の兆し:23.00:E0000000::10000000:${var:party_name_5}:" LogProcess="True" ActionType="LogMessage">
-                <Condition Enabled="false" Grouping="Or" />
-              </Action>
-              <Action OrderNumber="6" LogMessageText="[23:58:33.797] StatusAdd 1A:E07:誘風の兆し:23.00:E0000000::10000000:${var:party_name_6}:" LogProcess="True" ActionType="LogMessage">
-                <Condition Enabled="false" Grouping="Or" />
-              </Action>
-              <Action OrderNumber="7" LogMessageText="[23:58:33.797] StatusAdd 1A:E07:誘風の兆し:23.00:E0000000::10000000:${var:party_name_1}:" LogProcess="True" ActionType="LogMessage">
-                <Condition Enabled="false" Grouping="Or" />
-              </Action>
-              <Action OrderNumber="8" LogMessageText="[23:58:33.797] StatusAdd 1A:E06:重火の兆し:12.00:E0000000::10000000:${var:party_name_3}:" LogProcess="True" ActionType="LogMessage">
-                <Condition Enabled="false" Grouping="Or" />
-              </Action>
-              <Action OrderNumber="9" LogMessageText="[23:58:33.797] StatusAdd 1A:E06:重火の兆し:12.00:E0000000::10000000:${var:party_name_2}:" LogProcess="True" ActionType="LogMessage">
-                <Condition Enabled="false" Grouping="Or" />
-              </Action>
-              <Action OrderNumber="10" LogMessageText="[23:58:33.797] StatusAdd 1A:E06:重火の兆し:12.00:E0000000::10000000:${var:party_name_8}:" LogProcess="True" ActionType="LogMessage">
-                <Condition Enabled="false" Grouping="Or" />
-              </Action>
-              <Action OrderNumber="11" LogMessageText="[23:58:33.797] StatusAdd 1A:E06:重火の兆し:12.00:E0000000::10000000:${var:party_name_7}:" LogProcess="True" ActionType="LogMessage">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
             </Actions>
