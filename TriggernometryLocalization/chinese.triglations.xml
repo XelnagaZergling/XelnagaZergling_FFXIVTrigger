@@ -29,7 +29,7 @@
     <TranslationEntry Key="ActionForm/cbxActionType[LiveSplit remote control operation]" Translation="LiveSplit远程控制操作" />
     <TranslationEntry Key="ActionForm/cbxActionType[Play sound file]" Translation="播放声音文件" />
     <TranslationEntry Key="ActionForm/cbxActionType[Scalar variable operation]" Translation="标量变量运算" />
-    <TranslationEntry Key="ActionForm/cbxActionType[Send keypresses to active window]" Translation="将按键发送到当前窗口" />
+    <TranslationEntry Key="ActionForm/cbxActionType[Send keypresses to active window]" Translation="发送按键到窗口" />
     <TranslationEntry Key="ActionForm/cbxActionType[Send window message]" Translation="发送窗口消息" />
     <TranslationEntry Key="ActionForm/cbxActionType[Show message box]" Translation="显示消息" />
     <TranslationEntry Key="ActionForm/cbxActionType[System beep]" Translation="系统音效" />
@@ -73,17 +73,17 @@
     <TranslationEntry Key="ActionForm/cbxLvarOperation[Copy whole list variable to another list variable]" Translation="将整个列表变量复制到另一个列表变量" />
     <TranslationEntry Key="ActionForm/cbxLvarOperation[Insert list variable into another list variable at the given index]" Translation="将列表变量插入到给定索引处的另一个列表变量中" />
     <TranslationEntry Key="ActionForm/cbxLvarOperation[Insert value to the given index of the list variable]" Translation="将值插入到列表变量的给定索引" />
-    <TranslationEntry Key="ActionForm/cbxLvarOperation[Join all values in the list variable into a scalar variable (separator in expression)]" Translation="将列表变量中的所有值联接到标量变量中(表达式中的分隔符)" />
+    <TranslationEntry Key="ActionForm/cbxLvarOperation[Join all values in the list variable into a scalar variable (separator in expression)]" Translation="将列表变量中的所有值联接到标量变量中(表达式代表分隔符)" />
     <TranslationEntry Key="ActionForm/cbxLvarOperation[Pop first value from list variable into a scalar variable (queue)]" Translation="将列表变量中的第一个值弹出到标量变量(队列)中" />
     <TranslationEntry Key="ActionForm/cbxLvarOperation[Pop last value from list variable into a scalar variable (stack)]" Translation="将列表变量中的最后一个值弹出到标量变量(堆栈)中" />
     <TranslationEntry Key="ActionForm/cbxLvarOperation[Push value to the end of the list variable]" Translation="将值推送到列表变量的末尾" />
-    <TranslationEntry Key="ActionForm/cbxLvarOperation[Remove value at the given index of the list variable]" Translation="删除列表变量的给定索引处的值" />
+    <TranslationEntry Key="ActionForm/cbxLvarOperation[Remove value at the given index of the list variable]" Translation="销毁列表变量的给定索引处的值" />
     <TranslationEntry Key="ActionForm/cbxLvarOperation[Set value at the given index of the list variable]" Translation="在列表变量的给定索引处设置值" />
     <TranslationEntry Key="ActionForm/cbxLvarOperation[Sort list in a descending order based on FFXIV party job order]" Translation="根据 FFXIV 默认职业顺序按降序对列表进行排序" />
     <TranslationEntry Key="ActionForm/cbxLvarOperation[Sort list in an alphabetically ascending order]" Translation="按字母顺序升序排序列表" />
     <TranslationEntry Key="ActionForm/cbxLvarOperation[Sort list in an alphabetically descending order]" Translation="按字母顺序降序排序列表" />
     <TranslationEntry Key="ActionForm/cbxLvarOperation[Sort list in an ascending order based on FFXIV party job order]" Translation="根据 FFXIV 默认职业顺序按升序对列表进行排序" />
-    <TranslationEntry Key="ActionForm/cbxLvarOperation[Split a scalar variable into a list variable (separator in expression)]" Translation="将标量变量拆分为列表变量(表达式中的分隔符)" />
+    <TranslationEntry Key="ActionForm/cbxLvarOperation[Split a scalar variable into a list variable (separator in expression)]" Translation="将标量变量拆分为列表变量(表达式代表分隔符)" />
     <TranslationEntry Key="ActionForm/cbxLvarOperation[Unset all list variables]" Translation="销毁所有列表变量" />
     <TranslationEntry Key="ActionForm/cbxLvarOperation[Unset list variable]" Translation="销毁列表变量" />
     <TranslationEntry Key="ActionForm/cbxLvarOperation[Unset list variables matching regular expression]" Translation="销毁与正则表达式匹配的列表变量" />
@@ -148,7 +148,7 @@
     <TranslationEntry Key="ActionForm/cbxTriggerOp[Disable the specified trigger]" Translation="禁用指定触发器" />
     <TranslationEntry Key="ActionForm/cbxTriggerOp[Enable the specified trigger]" Translation="启用指定触发器" />
     <TranslationEntry Key="ActionForm/cbxTriggerOp[Fire the specified trigger]" Translation="执行指定触发器" />
-    <TranslationEntry Key="ActionForm/cbxTvarExpType[Numeric]" Translation="数字" />
+    <TranslationEntry Key="ActionForm/cbxTvarExpType[Numeric]" Translation="数值" />
     <TranslationEntry Key="ActionForm/cbxTvarExpType[String]" Translation="字符串" />
     <TranslationEntry Key="ActionForm/cbxTvarOpType[Append whole table variable to another table variable]" Translation="将整个表格变量加入到另一个表变量" />
     <TranslationEntry Key="ActionForm/cbxTvarOpType[Copy whole table variable to another table variable]" Translation="将整个表格变量复制到另一个表变量" />
@@ -174,9 +174,9 @@
     <TranslationEntry Key="ActionForm/cndCondition/btnDelete" Translation="移除" />
     <TranslationEntry Key="ActionForm/cndCondition/btnProperties" Translation="显示属性" />
     <TranslationEntry Key="ActionForm/cndCondition/capProperties/lblContent" Translation="属性" />
-    <TranslationEntry Key="ActionForm/cndCondition/cbxExpLType[Numeric]" Translation="数字" />
+    <TranslationEntry Key="ActionForm/cndCondition/cbxExpLType[Numeric]" Translation="数值" />
     <TranslationEntry Key="ActionForm/cndCondition/cbxExpLType[String]" Translation="字符串" />
-    <TranslationEntry Key="ActionForm/cndCondition/cbxExpRType[Numeric]" Translation="数字" />
+    <TranslationEntry Key="ActionForm/cndCondition/cbxExpRType[Numeric]" Translation="数值" />
     <TranslationEntry Key="ActionForm/cndCondition/cbxExpRType[String]" Translation="字符串" />
     <TranslationEntry Key="ActionForm/cndCondition/cbxGroupingType[All conditions must be true (AND)]" Translation="所有条件都为真 (与)" />
     <TranslationEntry Key="ActionForm/cndCondition/cbxGroupingType[At least one condition must be true (OR)]" Translation="至少有一个条件为真 (或)" />
@@ -290,7 +290,7 @@
     <TranslationEntry Key="ActionForm/lblTextAuraOutline" Translation="显示概述" />
     <TranslationEntry Key="ActionForm/lblTextAuraText" Translation="准备显示的文本" />
     <TranslationEntry Key="ActionForm/lblTextAuraTtlExp" Translation="持续时间" />
-    <TranslationEntry Key="ActionForm/lblTextAuraUpdValues" Translation="更新刻度 (20 ms) " />
+    <TranslationEntry Key="ActionForm/lblTextAuraUpdValues" Translation="更新时间 (20 ms) " />
     <TranslationEntry Key="ActionForm/lblTextAuraWidth" Translation="宽度" />
     <TranslationEntry Key="ActionForm/lblTextAuraX" Translation="X坐标" />
     <TranslationEntry Key="ActionForm/lblTextAuraY" Translation="Y坐标" />
@@ -306,7 +306,7 @@
     <TranslationEntry Key="ActionForm/lblTvarRow" Translation="行 (序号)" />
     <TranslationEntry Key="ActionForm/lblTvarTarget" Translation="目标变量名称" />
     <TranslationEntry Key="ActionForm/lblTvarValue" Translation="表达式" />
-    <TranslationEntry Key="ActionForm/lblUpdateTickExp" Translation="更新刻度 (20 ms) " />
+    <TranslationEntry Key="ActionForm/lblUpdateTickExp" Translation="更新时间 (20 ms) " />
     <TranslationEntry Key="ActionForm/lblVariableExpression" Translation="表达式" />
     <TranslationEntry Key="ActionForm/lblVariableName" Translation="标量变量名称" />
     <TranslationEntry Key="ActionForm/lblVariableOp" Translation="操作类型" />
@@ -622,7 +622,7 @@
     <TranslationEntry Key="internal/Action/desclistpoplast" Translation="将列表变量的最后一个值 ({0}) 从列表移除，并设为标量变量 ({1})" />
     <TranslationEntry Key="internal/Action/desclistpushnumeric" Translation="推送数值表达式的值 ({0}) 到列表变量的末尾 ({1})" />
     <TranslationEntry Key="internal/Action/desclistpushstring" Translation="推送字符串表达式的值 ({0}) 到列表变量的末尾 ({1})" />
-    <TranslationEntry Key="internal/Action/desclistremoveindex" Translation="删除列表变量 ({1}) 在 ({0}) 位的值 " />
+    <TranslationEntry Key="internal/Action/desclistremoveindex" Translation="销毁列表变量 ({1}) 在 ({0}) 位的值 " />
     <TranslationEntry Key="internal/Action/desclistsetnumeric" Translation="将列表变量 ({2}) 在 ({1}) 位的值设置为数值表达式的值 ({0})" />
     <TranslationEntry Key="internal/Action/desclistsetstring" Translation="将列表变量 ({2}) 在 ({1}) 位的值设置为字符串表达式的值 ({0})" />
     <TranslationEntry Key="internal/Action/desclistsortasc" Translation="将列表变量 ({0}) 按字母顺序升序排列" />
@@ -787,11 +787,11 @@
     <TranslationEntry Key="internal/ConditionGroup/or" Translation="至少有一个条件为真" />
     <TranslationEntry Key="internal/ConditionGroup/unknown" Translation="未知分组值 '{0}'" />
     <TranslationEntry Key="internal/ConditionGroup/xor" Translation="只有一个条件为真" />
-    <TranslationEntry Key="internal/ConditionSingle/listcantcontain" Translation="不包含结果从" />
-    <TranslationEntry Key="internal/ConditionSingle/listmustcontain" Translation="包含结果从" />
-    <TranslationEntry Key="internal/ConditionSingle/listvar" Translation="列表变量由" />
+    <TranslationEntry Key="internal/ConditionSingle/listcantcontain" Translation="不包含" />
+    <TranslationEntry Key="internal/ConditionSingle/listmustcontain" Translation="包含" />
+    <TranslationEntry Key="internal/ConditionSingle/listvar" Translation="列表变量" />
     <TranslationEntry Key="internal/ConditionSingle/noregexmatch" Translation="正则表达式不匹配" />
-    <TranslationEntry Key="internal/ConditionSingle/numericequal" Translation="在数值上相等" />
+    <TranslationEntry Key="internal/ConditionSingle/numericequal" Translation="在数值上等于" />
     <TranslationEntry Key="internal/ConditionSingle/numericexpression" Translation="数值表达式 ({0})" />
     <TranslationEntry Key="internal/ConditionSingle/numericgreater" Translation="在数值上大于" />
     <TranslationEntry Key="internal/ConditionSingle/numericgreaterequal" Translation="在数值上大于或等于" />
@@ -1459,6 +1459,8 @@
     <TranslationEntry Key="VariableEditorForm/grpGeneral" Translation=" 通用设置 " />
     <TranslationEntry Key="VariableEditorForm/lblVariableName" Translation="变量名称" />
     <!-- XelnagaZergling添加 -->
+    <TranslationEntry Key="Schedule trigger action starting from" Translation="根据...开始触发器" />
+    <TranslationEntry Key="Remove all variables" Translation="移除所有变量" />
     <TranslationEntry Key="Plugin/UserInterface/lblWelcomeStartHeader" Translation="在哪里可以找到要在Triggernometry中使用的触发器？" />
     <TranslationEntry Key="Plugin/UserInterface/lblWelcomeStart" Translation="您第一次启动Iriggernometry时，通常本地触发器和远程触发器的分组都是空的。如果要访问Iriggernometry的预设触发器，您可以右键单击远程触发器，然后选择从列表中添加Repository" />
     <TranslationEntry Key="StateForm/tabScalarSession" Translation="Session" />
@@ -1490,7 +1492,7 @@
     <TranslationEntry Key="RepositoryForm/lblLastChecked" Translation="上次点击" />
     <TranslationEntry Key="RepositoryForm/cbxNewBehavior[Enabled or disabled as specified in repository]" Translation="根据Repository中的指定启用和禁用" />
     <TranslationEntry Key="ConfigurationForm/lstFfxivJobOrder[Reaper]" Translation="钐镰客" />
-    <TranslationEntry Key="ConfigurationForm/lstFfxivJobOrder[Reaper]" Translation="钐镰客" />
+    <TranslationEntry Key="ConfigurationForm/lstFfxivJobOrder[Sage]" Translation="贤者" />
     <!-- 分割线 -->
     <TranslationEntry Key="ConfigurationForm/lblUpdateMethod" Translation="插件更新检查方法" />
     <TranslationEntry Key="ConfigurationForm/cbxUpdateMethod[Built-in (legacy)]" Translation="内置 (过时)" />
@@ -1517,16 +1519,24 @@
     <TranslationEntry Key="ConfigurationForm/chkEndpointLog" Translation="记录接收到的数据" />
     <TranslationEntry Key="ConfigurationForm/grpEndpointHistory" Translation="端点历史记录" />
     <TranslationEntry Key="ConfigurationForm/btnEndpointHistUpdate" Translation="更新" />
+    <TranslationEntry Key="ConfigurationForm/Column8" Translation="时间戳" />
+    <TranslationEntry Key="ConfigurationForm/Column9" Translation="数据" />
     <TranslationEntry Key="ConfigurationForm/tslEndpointHistoryRecv" Translation="个电报已收到" />
     <TranslationEntry Key="ConfigurationForm/btnTriggerTemplate" Translation="编辑模板触发器" />
     <TranslationEntry Key="internal/UserInterface/edittemplatetrigger" Translation="编辑模板触发器" />
     <!-- 分割线 -->
+    <TranslationEntry Key="TriggerForm/lblEvent" Translation="测试输入" />
     <TranslationEntry Key="TriggerForm/actionViewer1/btnAddAction" Translation="添加动作" />
     <TranslationEntry Key="TriggerForm/actionViewer1/btnEditAction" Translation="编辑动作" />
     <TranslationEntry Key="TriggerForm/actionViewer1/btnActionUp" Translation="向上移动" />
     <TranslationEntry Key="TriggerForm/actionViewer1/btnActionDown" Translation="向下移动" />
     <TranslationEntry Key="TriggerForm/actionViewer1/btnRemoveAction" Translation="移除动作" />
     <TranslationEntry Key="TriggerForm/actionViewer1/colDescription" Translation="描述" />
+    <TranslationEntry Key="TriggerForm/actionViewer1/ctxAddAction" Translation="添加动作" />
+    <TranslationEntry Key="TriggerForm/actionViewer1/ctxEditAction" Translation="编辑动作" />
+    <TranslationEntry Key="TriggerForm/actionViewer1/ctxActionUp" Translation="向上移动" />
+    <TranslationEntry Key="TriggerForm/actionViewer1/ctxActionDown" Translation="向下移动" />
+    <TranslationEntry Key="TriggerForm/actionViewer1/ctxRemoveAction" Translation="移除动作" />
     <!-- 分割线 -->
     <TranslationEntry Key="TestInputForm/cbxEventDestination[ACT event]" Translation="ACT事件" />
     <TranslationEntry Key="TestInputForm/cbxEventDestination[Endpoint]" Translation="端点" />
@@ -1565,6 +1575,11 @@
     <TranslationEntry Key="ActionForm/lblObsJSONPayload" Translation="JSON加载" />
     <TranslationEntry Key="ActionForm/cbxObsOpType[Custom JSON payload]" Translation="自定义JSON加载" />
     <TranslationEntry Key="internal/Action/descobsjsonpayload" Translation="加载自定义JSON到OBS" />
+    <TranslationEntry Key="KeyListenForm" Translation="监听按键" />
+    <TranslationEntry Key="KeyListenForm/lblKeypressInfo" Translation="请按一个或多个按键，按需要的键后点击确定。" />
+    <TranslationEntry Key="KeyListenForm/lblKeypress" Translation="(还没有按键输入)" />
+    <TranslationEntry Key="KeyListenForm/btnOk" Translation="确定" />
+    <TranslationEntry Key="KeyListenForm/btnCancel" Translation="取消" />
     <TranslationEntry Key="ActionForm/lblWmsgProcid" Translation="进程id" />
     <TranslationEntry Key="ActionForm/lblWmsgProcInfo" Translation="如果进程ID为空或为零，则消息将发送到具有给定标题的第一个窗口。如果设置为1，则消息将发送到所有找到的窗口。对于所有其他值，消息将发送到具有匹配进程ID的窗口" />
     <TranslationEntry Key="ActionForm/label6" Translation="目标变量名称" />
@@ -1586,10 +1601,10 @@
     <TranslationEntry Key="ActionForm/lblMouseY" Translation="Y 坐标" />
     <TranslationEntry Key="internal/Action/descmousecoordabsolute" Translation="绝对坐标" />
     <TranslationEntry Key="internal/Action/descmousecoordrelative" Translation="相对坐标" />
-    <TranslationEntry Key="internal/Action/descmousemove" Translation="将鼠标移动到 X:{1},Y:{2}" />
-    <TranslationEntry Key="internal/Action/descmouselmb" Translation="将鼠标移动到 X:{1},Y:{2} 并单击左键" />
-    <TranslationEntry Key="internal/Action/descmousemmb" Translation="将鼠标移动到 X:{1},Y:{2} 并单击中键" />
-    <TranslationEntry Key="internal/Action/descmousermb" Translation="将鼠标移动到 X:{1},Y:{2} 并单击右键" />
+    <TranslationEntry Key="internal/Action/descmousemove" Translation="将鼠标移动到 {0} X:({1}),Y:({2})" />
+    <TranslationEntry Key="internal/Action/descmouselmb" Translation="将鼠标移动到 {0} X:({1}),Y:({2}) 并单击左键" />
+    <TranslationEntry Key="internal/Action/descmousemmb" Translation="将鼠标移动到 {0} X:({1}),Y:({2}) 并单击中键" />
+    <TranslationEntry Key="internal/Action/descmousermb" Translation="将鼠标移动到 {0} X:({1}),Y:({2}) 并单击右键" />
     <TranslationEntry Key="ActionForm/cbxActionType[Loop]" Translation="循环" />
     <TranslationEntry Key="ActionForm/lblLoopInit" Translation="初始值" />
     <TranslationEntry Key="ActionForm/lblLoopIncr" Translation="自增" />
@@ -1644,6 +1659,7 @@
     <TranslationEntry Key="internal/Action/descrepoinvalidref" Translation="Repository操作引用了无效的Repository ({0})" />
     <TranslationEntry Key="internal/Action/repoupdatespecific" Translation="更新Repository ({0})" />
     <TranslationEntry Key="internal/Action/repoupdateall" Translation="更新已启用Repository" />
+    <TranslationEntry Key="internal/PersistenceSwitch/string" Translation="如果要修改的是常量，则这里的值会在ACT退出时保存到磁盘，在下次启动时加载。常量与一般的变量位于不同的命名空间中(译注：请点tg右上角的编辑配置)。" />
 	  <!-- 结束 -->
 	  <!-- new in 1.1.3.1 -->
     <TranslationEntry Key="ActionForm/lblLogMessageLevel" Translation="变量名称" />
