@@ -2144,19 +2144,19 @@
               <Action OrderNumber="5" ActionType="Placeholder">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
-              <Action OrderNumber="6" VariableOp="SetString" VariableName="channel" VariableExpression="e" Enabled="False" ActionType="Variable">
+              <Action OrderNumber="6" VariableOp="SetString" VariableName="channel" VariableExpression="e" ActionType="Variable">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
-              <Action OrderNumber="7" VariableOp="SetString" VariableName="channel" VariableExpression="p" ActionType="Variable">
+              <Action OrderNumber="7" VariableOp="SetString" VariableName="channel" VariableExpression="p" Enabled="False" ActionType="Variable">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
               <Action OrderNumber="8" ActionType="Placeholder">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
-              <Action OrderNumber="9" VariableOp="SetNumeric" VariableName="job" VariableExpression="1" ActionType="Variable">
+              <Action OrderNumber="9" VariableOp="SetNumeric" VariableName="job" VariableExpression="1" Enabled="False" ActionType="Variable">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
-              <Action OrderNumber="10" VariableOp="SetNumeric" VariableName="id" VariableExpression="1" Enabled="False" ActionType="Variable">
+              <Action OrderNumber="10" VariableOp="SetNumeric" VariableName="id" VariableExpression="1" ActionType="Variable">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
               <Action OrderNumber="11" ActionType="Placeholder">
