@@ -1054,7 +1054,7 @@
                             <Folders>
                               <Folder Id="851c5442-6f24-48fc-a765-84f1c57822bc" Name="ゲーム8" Enabled="true">
                                 <Folders>
-                                  <Folder Id="e061d19c-5749-42dc-bccd-d5d400855a1e" Name="重火1回目 攻撃1234 ABCD" Enabled="false">
+                                  <Folder Id="e061d19c-5749-42dc-bccd-d5d400855a1e" Name="重火1回目 攻撃1234 ABCD" Enabled="true">
                                     <Folders />
                                     <Triggers>
                                       <Trigger Enabled="true" Sequential="True" Name="*実行mark" Id="e767b65b-975c-4777-a305-5f0329fd0063" RegularExpression="^.{14} StatusAdd 1A:E06:.*:12.00:E0000000::.{8}:(?&lt;name&gt;.+?):">
@@ -1551,7 +1551,7 @@
                                     </Folders>
                                     <Triggers />
                                   </Folder>
-                                  <Folder Id="ab3a30c8-81c4-4df5-b108-2e135ad218cb" Name="誘風 禁止12 CD" Enabled="false">
+                                  <Folder Id="ab3a30c8-81c4-4df5-b108-2e135ad218cb" Name="誘風 禁止12 CD" Enabled="true">
                                     <Folders>
                                       <Folder Id="f067ef24-623f-4bd5-86b5-20d4c6c48df3" Name="target mark" Enabled="true">
                                         <Folders />
