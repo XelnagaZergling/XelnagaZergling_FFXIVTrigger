@@ -2157,10 +2157,10 @@
               <Action OrderNumber="11" ActionType="Placeholder">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
-              <Action OrderNumber="12" VariableOp="SetNumeric" VariableName="mark" VariableExpression="0" Enabled="False" ActionType="Variable">
+              <Action OrderNumber="12" VariableOp="SetNumeric" VariableName="mark" VariableExpression="0" ActionType="Variable">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
-              <Action OrderNumber="13" VariableOp="SetNumeric" VariableName="mark" VariableExpression="1" ActionType="Variable">
+              <Action OrderNumber="13" VariableOp="SetNumeric" VariableName="mark" VariableExpression="1" Enabled="False" ActionType="Variable">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
             </Actions>
