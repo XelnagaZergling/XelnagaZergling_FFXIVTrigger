@@ -2132,7 +2132,7 @@
               <ConditionSingle Enabled="true" ExpressionL="${myname}" ExpressionTypeL="String" ExpressionR="${_ffxivparty[1].name}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
             </Condition>
           </Trigger>
-          <Trigger Enabled="true" Sequential="True" Name="設定" Id="9867c0be-3a3c-4650-8de4-ceca823b1703" RegularExpression="^.{14} Territory 01:.*:.*:|^.{14} ChatLog 00:00B9::">
+          <Trigger Enabled="true" Sequential="True" Name="*設定" Id="9867c0be-3a3c-4650-8de4-ceca823b1703" RegularExpression="^.{14} Territory 01:.*:.*:|^.{14} ChatLog 00:00B9::">
             <Actions>
               <Action OrderNumber="1" VariableName="channel" ActionType="Variable">
                 <Condition Enabled="false" Grouping="Or" />
