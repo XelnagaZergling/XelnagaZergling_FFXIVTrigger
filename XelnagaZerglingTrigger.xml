@@ -2082,53 +2082,55 @@
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
           </Trigger>
-          <Trigger Enabled="true" Name="パーティ初期化" Id="d171190f-8bc5-4779-8c76-e2d0fa5c7cab" RegularExpression="^.{14} ChatLog 00:0038::(?&lt;me&gt;.+?):(?&lt;job&gt;.*)">
+          <Trigger Enabled="true" Sequential="True" Name="パーティ初期化" Id="d171190f-8bc5-4779-8c76-e2d0fa5c7cab" RegularExpression="^.{14} ChatLog 00:0038::(?&lt;myname&gt;.+?):(?&lt;job&gt;.*)">
             <Actions>
-              <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:${var:鲶鱼精邮差监听端口}/command" JsonPayloadExpression="/e 神兵初始化：h1:3:&lt;3&gt;,h2:4:&lt;4&gt;,d1:5:&lt;5&gt;,d2:6:&lt;6&gt;,d3:7:&lt;7&gt;,d4:8:&lt;8&gt;,st:2:&lt;2&gt;,mt:1:&lt;1&gt;然后完毕" NamedCallbackName="command" NamedCallbackParam="/e party:1:&lt;1&gt;:2:&lt;2&gt;:3:&lt;3&gt;:4:&lt;4&gt;:5:&lt;5&gt;:6:&lt;6&gt;:7:&lt;7&gt;:8:&lt;8&gt;:" ActionType="NamedCallback">
+              <Action OrderNumber="1" VariableOp="SetString" VariableName="myname" VariableExpression="${myname}" ActionType="Variable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:${var:鲶鱼精邮差监听端口}/command" JsonPayloadExpression="/e 神兵初始化：h1:3:&lt;3&gt;,h2:4:&lt;4&gt;,d1:5:&lt;5&gt;,d2:6:&lt;6&gt;,d3:7:&lt;7&gt;,d4:8:&lt;8&gt;,st:2:&lt;2&gt;,mt:1:&lt;1&gt;然后完毕" NamedCallbackName="command" NamedCallbackParam="/e party:1:&lt;1&gt;:2:&lt;2&gt;:3:&lt;3&gt;:4:&lt;4&gt;:5:&lt;5&gt;:6:&lt;6&gt;:7:&lt;7&gt;:8:&lt;8&gt;:" ActionType="NamedCallback">
                 <Condition Enabled="true" Grouping="Or">
                   <ConditionSingle Enabled="true" ExpressionL="${job}" ExpressionTypeL="String" ExpressionR="MT" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                 </Condition>
               </Action>
-              <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:${var:鲶鱼精邮差监听端口}/command" JsonPayloadExpression="/e 神兵初始化：h1:3:&lt;3&gt;,h2:4:&lt;4&gt;,d1:5:&lt;5&gt;,d2:6:&lt;6&gt;,d3:7:&lt;7&gt;,d4:8:&lt;8&gt;,st:2:&lt;2&gt;,mt:1:&lt;1&gt;然后完毕" NamedCallbackName="command" NamedCallbackParam="/e party:2:&lt;2&gt;:1:&lt;1&gt;:3:&lt;3&gt;:4:&lt;4&gt;:5:&lt;5&gt;:6:&lt;6&gt;:7:&lt;7&gt;:8:&lt;8&gt;:" ActionType="NamedCallback">
+              <Action OrderNumber="3" JsonEndpointExpression="http://127.0.0.1:${var:鲶鱼精邮差监听端口}/command" JsonPayloadExpression="/e 神兵初始化：h1:3:&lt;3&gt;,h2:4:&lt;4&gt;,d1:5:&lt;5&gt;,d2:6:&lt;6&gt;,d3:7:&lt;7&gt;,d4:8:&lt;8&gt;,st:2:&lt;2&gt;,mt:1:&lt;1&gt;然后完毕" NamedCallbackName="command" NamedCallbackParam="/e party:2:&lt;2&gt;:1:&lt;1&gt;:3:&lt;3&gt;:4:&lt;4&gt;:5:&lt;5&gt;:6:&lt;6&gt;:7:&lt;7&gt;:8:&lt;8&gt;:" ActionType="NamedCallback">
                 <Condition Enabled="true" Grouping="Or">
                   <ConditionSingle Enabled="true" ExpressionL="${job}" ExpressionTypeL="String" ExpressionR="ST" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                 </Condition>
               </Action>
-              <Action OrderNumber="3" JsonEndpointExpression="http://127.0.0.1:${var:鲶鱼精邮差监听端口}/command" JsonPayloadExpression="/e 神兵初始化：h1:3:&lt;3&gt;,h2:4:&lt;4&gt;,d1:5:&lt;5&gt;,d2:6:&lt;6&gt;,d3:7:&lt;7&gt;,d4:8:&lt;8&gt;,st:2:&lt;2&gt;,mt:1:&lt;1&gt;然后完毕" NamedCallbackName="command" NamedCallbackParam="/e party:2:&lt;2&gt;:3:&lt;3&gt;:1:&lt;1&gt;:4:&lt;4&gt;:5:&lt;5&gt;:6:&lt;6&gt;:7:&lt;7&gt;:8:&lt;8&gt;:" ActionType="NamedCallback">
+              <Action OrderNumber="4" JsonEndpointExpression="http://127.0.0.1:${var:鲶鱼精邮差监听端口}/command" JsonPayloadExpression="/e 神兵初始化：h1:3:&lt;3&gt;,h2:4:&lt;4&gt;,d1:5:&lt;5&gt;,d2:6:&lt;6&gt;,d3:7:&lt;7&gt;,d4:8:&lt;8&gt;,st:2:&lt;2&gt;,mt:1:&lt;1&gt;然后完毕" NamedCallbackName="command" NamedCallbackParam="/e party:2:&lt;2&gt;:3:&lt;3&gt;:1:&lt;1&gt;:4:&lt;4&gt;:5:&lt;5&gt;:6:&lt;6&gt;:7:&lt;7&gt;:8:&lt;8&gt;:" ActionType="NamedCallback">
                 <Condition Enabled="true" Grouping="Or">
                   <ConditionSingle Enabled="true" ExpressionL="${job}" ExpressionTypeL="String" ExpressionR="H1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                 </Condition>
               </Action>
-              <Action OrderNumber="4" JsonEndpointExpression="http://127.0.0.1:${var:鲶鱼精邮差监听端口}/command" JsonPayloadExpression="/e 神兵初始化：h1:3:&lt;3&gt;,h2:4:&lt;4&gt;,d1:5:&lt;5&gt;,d2:6:&lt;6&gt;,d3:7:&lt;7&gt;,d4:8:&lt;8&gt;,st:2:&lt;2&gt;,mt:1:&lt;1&gt;然后完毕" NamedCallbackName="command" NamedCallbackParam="/e party:2:&lt;2&gt;:3:&lt;3&gt;:4:&lt;4&gt;:1:&lt;1&gt;:5:&lt;5&gt;:6:&lt;6&gt;:7:&lt;7&gt;:8:&lt;8&gt;:" ActionType="NamedCallback">
+              <Action OrderNumber="5" JsonEndpointExpression="http://127.0.0.1:${var:鲶鱼精邮差监听端口}/command" JsonPayloadExpression="/e 神兵初始化：h1:3:&lt;3&gt;,h2:4:&lt;4&gt;,d1:5:&lt;5&gt;,d2:6:&lt;6&gt;,d3:7:&lt;7&gt;,d4:8:&lt;8&gt;,st:2:&lt;2&gt;,mt:1:&lt;1&gt;然后完毕" NamedCallbackName="command" NamedCallbackParam="/e party:2:&lt;2&gt;:3:&lt;3&gt;:4:&lt;4&gt;:1:&lt;1&gt;:5:&lt;5&gt;:6:&lt;6&gt;:7:&lt;7&gt;:8:&lt;8&gt;:" ActionType="NamedCallback">
                 <Condition Enabled="true" Grouping="Or">
                   <ConditionSingle Enabled="true" ExpressionL="${job}" ExpressionTypeL="String" ExpressionR="H2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                 </Condition>
               </Action>
-              <Action OrderNumber="5" JsonEndpointExpression="http://127.0.0.1:${var:鲶鱼精邮差监听端口}/command" JsonPayloadExpression="/e 神兵初始化：h1:3:&lt;3&gt;,h2:4:&lt;4&gt;,d1:5:&lt;5&gt;,d2:6:&lt;6&gt;,d3:7:&lt;7&gt;,d4:8:&lt;8&gt;,st:2:&lt;2&gt;,mt:1:&lt;1&gt;然后完毕" NamedCallbackName="command" NamedCallbackParam="/e party:2:&lt;2&gt;:3:&lt;3&gt;:4:&lt;4&gt;:5:&lt;5&gt;:1:&lt;1&gt;:6:&lt;6&gt;:7:&lt;7&gt;:8:&lt;8&gt;:" ActionType="NamedCallback">
+              <Action OrderNumber="6" JsonEndpointExpression="http://127.0.0.1:${var:鲶鱼精邮差监听端口}/command" JsonPayloadExpression="/e 神兵初始化：h1:3:&lt;3&gt;,h2:4:&lt;4&gt;,d1:5:&lt;5&gt;,d2:6:&lt;6&gt;,d3:7:&lt;7&gt;,d4:8:&lt;8&gt;,st:2:&lt;2&gt;,mt:1:&lt;1&gt;然后完毕" NamedCallbackName="command" NamedCallbackParam="/e party:2:&lt;2&gt;:3:&lt;3&gt;:4:&lt;4&gt;:5:&lt;5&gt;:1:&lt;1&gt;:6:&lt;6&gt;:7:&lt;7&gt;:8:&lt;8&gt;:" ActionType="NamedCallback">
                 <Condition Enabled="true" Grouping="Or">
                   <ConditionSingle Enabled="true" ExpressionL="${job}" ExpressionTypeL="String" ExpressionR="D1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                 </Condition>
               </Action>
-              <Action OrderNumber="6" JsonEndpointExpression="http://127.0.0.1:${var:鲶鱼精邮差监听端口}/command" JsonPayloadExpression="/e 神兵初始化：h1:3:&lt;3&gt;,h2:4:&lt;4&gt;,d1:5:&lt;5&gt;,d2:6:&lt;6&gt;,d3:7:&lt;7&gt;,d4:8:&lt;8&gt;,st:2:&lt;2&gt;,mt:1:&lt;1&gt;然后完毕" NamedCallbackName="command" NamedCallbackParam="/e party:2:&lt;2&gt;:3:&lt;3&gt;:4:&lt;4&gt;:5:&lt;5&gt;:6:&lt;6&gt;:1:&lt;1&gt;:7:&lt;7&gt;:8:&lt;8&gt;:" ActionType="NamedCallback">
+              <Action OrderNumber="7" JsonEndpointExpression="http://127.0.0.1:${var:鲶鱼精邮差监听端口}/command" JsonPayloadExpression="/e 神兵初始化：h1:3:&lt;3&gt;,h2:4:&lt;4&gt;,d1:5:&lt;5&gt;,d2:6:&lt;6&gt;,d3:7:&lt;7&gt;,d4:8:&lt;8&gt;,st:2:&lt;2&gt;,mt:1:&lt;1&gt;然后完毕" NamedCallbackName="command" NamedCallbackParam="/e party:2:&lt;2&gt;:3:&lt;3&gt;:4:&lt;4&gt;:5:&lt;5&gt;:6:&lt;6&gt;:1:&lt;1&gt;:7:&lt;7&gt;:8:&lt;8&gt;:" ActionType="NamedCallback">
                 <Condition Enabled="true" Grouping="Or">
                   <ConditionSingle Enabled="true" ExpressionL="${job}" ExpressionTypeL="String" ExpressionR="D2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                 </Condition>
               </Action>
-              <Action OrderNumber="7" JsonEndpointExpression="http://127.0.0.1:${var:鲶鱼精邮差监听端口}/command" JsonPayloadExpression="/e 神兵初始化：h1:3:&lt;3&gt;,h2:4:&lt;4&gt;,d1:5:&lt;5&gt;,d2:6:&lt;6&gt;,d3:7:&lt;7&gt;,d4:8:&lt;8&gt;,st:2:&lt;2&gt;,mt:1:&lt;1&gt;然后完毕" NamedCallbackName="command" NamedCallbackParam="/e party:2:&lt;2&gt;:3:&lt;3&gt;:4:&lt;4&gt;:5:&lt;5&gt;:6:&lt;6&gt;:7:&lt;7&gt;:1:&lt;1&gt;:8:&lt;8&gt;:" ActionType="NamedCallback">
+              <Action OrderNumber="8" JsonEndpointExpression="http://127.0.0.1:${var:鲶鱼精邮差监听端口}/command" JsonPayloadExpression="/e 神兵初始化：h1:3:&lt;3&gt;,h2:4:&lt;4&gt;,d1:5:&lt;5&gt;,d2:6:&lt;6&gt;,d3:7:&lt;7&gt;,d4:8:&lt;8&gt;,st:2:&lt;2&gt;,mt:1:&lt;1&gt;然后完毕" NamedCallbackName="command" NamedCallbackParam="/e party:2:&lt;2&gt;:3:&lt;3&gt;:4:&lt;4&gt;:5:&lt;5&gt;:6:&lt;6&gt;:7:&lt;7&gt;:1:&lt;1&gt;:8:&lt;8&gt;:" ActionType="NamedCallback">
                 <Condition Enabled="true" Grouping="Or">
                   <ConditionSingle Enabled="true" ExpressionL="${job}" ExpressionTypeL="String" ExpressionR="D3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                 </Condition>
               </Action>
-              <Action OrderNumber="8" JsonEndpointExpression="http://127.0.0.1:${var:鲶鱼精邮差监听端口}/command" JsonPayloadExpression="/e 神兵初始化：h1:3:&lt;3&gt;,h2:4:&lt;4&gt;,d1:5:&lt;5&gt;,d2:6:&lt;6&gt;,d3:7:&lt;7&gt;,d4:8:&lt;8&gt;,st:2:&lt;2&gt;,mt:1:&lt;1&gt;然后完毕" NamedCallbackName="command" NamedCallbackParam="/e party:2:&lt;2&gt;:3:&lt;3&gt;:4:&lt;4&gt;:5:&lt;5&gt;:6:&lt;6&gt;:7:&lt;7&gt;:8:&lt;8&gt;:1:&lt;1&gt;:" ActionType="NamedCallback">
+              <Action OrderNumber="9" JsonEndpointExpression="http://127.0.0.1:${var:鲶鱼精邮差监听端口}/command" JsonPayloadExpression="/e 神兵初始化：h1:3:&lt;3&gt;,h2:4:&lt;4&gt;,d1:5:&lt;5&gt;,d2:6:&lt;6&gt;,d3:7:&lt;7&gt;,d4:8:&lt;8&gt;,st:2:&lt;2&gt;,mt:1:&lt;1&gt;然后完毕" NamedCallbackName="command" NamedCallbackParam="/e party:2:&lt;2&gt;:3:&lt;3&gt;:4:&lt;4&gt;:5:&lt;5&gt;:6:&lt;6&gt;:7:&lt;7&gt;:8:&lt;8&gt;:1:&lt;1&gt;:" ActionType="NamedCallback">
                 <Condition Enabled="true" Grouping="Or">
                   <ConditionSingle Enabled="true" ExpressionL="${job}" ExpressionTypeL="String" ExpressionR="D4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                 </Condition>
               </Action>
-              <Action OrderNumber="9" VariableOp="SetString" VariableName="me" VariableExpression="${me}" ActionType="Variable">
-                <Condition Enabled="false" Grouping="Or" />
-              </Action>
             </Actions>
-            <Condition Enabled="false" Grouping="Or" />
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${myname}" ExpressionTypeL="String" ExpressionR="${_ffxivparty[1].name}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
           </Trigger>
           <Trigger Enabled="true" Sequential="True" Name="設定" Id="9867c0be-3a3c-4650-8de4-ceca823b1703" RegularExpression="^.{14} Territory 01:.*:.*:|^.{14} ChatLog 00:00B9::">
             <Actions>
@@ -2182,7 +2184,7 @@
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
           </Trigger>
-          <Trigger Enabled="true" Name="*説明" Id="97556e95-7c23-4f13-8f9e-9e6c9d11fb4b" RegularExpression="Descriptionをご覧ください ↓↓↓" Description="/echoにクラス・ジョプを入力&#xD;&#xA;例：MT、ST、H1、H2、D1、D2、D3、D4&#xD;&#xA;&#xD;&#xA;それから、パーティリストが正しいか確認する&#xD;&#xA;">
+          <Trigger Enabled="true" Name="*説明" Id="97556e95-7c23-4f13-8f9e-9e6c9d11fb4b" RegularExpression="Descriptionをご覧ください ↓↓↓" Description="/echoに&lt;1&gt;:クラス・ジョプを入力&#xD;&#xA;例：&lt;1&gt;:MT&#xD;&#xA;そして、パーティリストが正しいか確認する&#xD;&#xA;————————————————————————&#xD;&#xA;在聊天栏/e输入&lt;1&gt;:职能&#xD;&#xA;例：&lt;1&gt;:MT&#xD;&#xA;然后检查小队列表是否正确">
             <Actions />
             <Condition Enabled="false" Grouping="Or" />
             <Conditions />
