@@ -2082,7 +2082,7 @@
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
           </Trigger>
-          <Trigger Enabled="true" Name="パーティ初期化" Id="d171190f-8bc5-4779-8c76-e2d0fa5c7cab" RegularExpression="^.{14} ChatLog 00:0038::(?&lt;job&gt;.*)">
+          <Trigger Enabled="true" Name="パーティ初期化" Id="d171190f-8bc5-4779-8c76-e2d0fa5c7cab" RegularExpression="^.{14} ChatLog 00:0038::(?&lt;me&gt;.+?):(?&lt;job&gt;.*)">
             <Actions>
               <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:${var:鲶鱼精邮差监听端口}/command" JsonPayloadExpression="/e 神兵初始化：h1:3:&lt;3&gt;,h2:4:&lt;4&gt;,d1:5:&lt;5&gt;,d2:6:&lt;6&gt;,d3:7:&lt;7&gt;,d4:8:&lt;8&gt;,st:2:&lt;2&gt;,mt:1:&lt;1&gt;然后完毕" NamedCallbackName="command" NamedCallbackParam="/e party:1:&lt;1&gt;:2:&lt;2&gt;:3:&lt;3&gt;:4:&lt;4&gt;:5:&lt;5&gt;:6:&lt;6&gt;:7:&lt;7&gt;:8:&lt;8&gt;:" ActionType="NamedCallback">
                 <Condition Enabled="true" Grouping="Or">
@@ -2123,6 +2123,9 @@
                 <Condition Enabled="true" Grouping="Or">
                   <ConditionSingle Enabled="true" ExpressionL="${job}" ExpressionTypeL="String" ExpressionR="D4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                 </Condition>
+              </Action>
+              <Action OrderNumber="9" VariableOp="SetString" VariableName="me" VariableExpression="${me}" ActionType="Variable">
+                <Condition Enabled="false" Grouping="Or" />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
@@ -2171,13 +2174,18 @@
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
           </Trigger>
-          <Trigger Enabled="true" Name="end encounter" Id="a40f62ae-05df-4b46-8e22-12cc591652a1" RegularExpression="^.{14} Director 21:.{8}:400000(0F|1[31])">
+          <Trigger Enabled="true" Name="ACT本体にEndを送信" Id="a40f62ae-05df-4b46-8e22-12cc591652a1" RegularExpression="^.{14} Director 21:.{8}:400000(0F|1[31])">
             <Actions>
               <Action OrderNumber="1" ActionType="EndEncounter">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="*説明" Id="97556e95-7c23-4f13-8f9e-9e6c9d11fb4b" RegularExpression="Descriptionをご覧ください ↓↓↓" Description="/echoにクラス・ジョプを入力&#xD;&#xA;例：MT、ST、H1、H2、D1、D2、D3、D4&#xD;&#xA;&#xD;&#xA;それから、パーティリストが正しいか確認する&#xD;&#xA;">
+            <Actions />
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
           </Trigger>
         </Triggers>
       </Folder>
