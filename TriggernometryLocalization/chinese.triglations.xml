@@ -1470,10 +1470,24 @@
     <TranslationEntry Key="Plugin/UserInterface/lblWelcomeStart" Translation="您第一次启动Iriggernometry时，通常本地触发器和远程触发器的分组都是空的。如果要访问Iriggernometry的预设触发器，您可以右键单击远程触发器，然后选择从列表中添加Repository" />
     <TranslationEntry Key="StateForm/tabScalarSession" Translation="Session" />
     <TranslationEntry Key="StateForm/tabScalarPersistent" Translation="Persistent" />
+    <TranslationEntry Key="StateForm/dataGridViewTextBoxColumn10" Translation="名称" />
+    <TranslationEntry Key="StateForm/dataGridViewTextBoxColumn11" Translation="值" />
+    <TranslationEntry Key="StateForm/dataGridViewTextBoxColumn12" Translation="上次更改" />
+    <TranslationEntry Key="StateForm/dataGridViewTextBoxColumn13" Translation="更改来源" />
     <TranslationEntry Key="StateForm/tabListSession" Translation="Session" />
     <TranslationEntry Key="StateForm/tabListPersistent" Translation="Persistent" />
+    <TranslationEntry Key="StateForm/dataGridViewTextBoxColumn14" Translation="名称" />
+    <TranslationEntry Key="StateForm/dataGridViewTextBoxColumn15" Translation="大小" />
+    <TranslationEntry Key="StateForm/dataGridViewTextBoxColumn16" Translation="值" />
+    <TranslationEntry Key="StateForm/dataGridViewTextBoxColumn17" Translation="上次更改" />
+    <TranslationEntry Key="StateForm/dataGridViewTextBoxColumn18" Translation="更改来源" />
     <TranslationEntry Key="StateForm/tabTableSession" Translation="Session" />
     <TranslationEntry Key="StateForm/tabTablePersistent" Translation="Persistent" />
+    <TranslationEntry Key="StateForm/dataGridViewTextBoxColumn19" Translation="名称" />
+    <TranslationEntry Key="StateForm/dataGridViewTextBoxColumn20" Translation="行数" />
+    <TranslationEntry Key="StateForm/dataGridViewTextBoxColumn21" Translation="列数" />
+    <TranslationEntry Key="StateForm/dataGridViewTextBoxColumn22" Translation="上次更改" />
+    <TranslationEntry Key="StateForm/dataGridViewTextBoxColumn23" Translation="更改来源" />
     <TranslationEntry Key="StateForm/btnCallbackRefresh" Translation="刷新" />
     <TranslationEntry Key="StateForm/btnImageRefresh" Translation="刷新" />
     <TranslationEntry Key="StateForm/btnPeScalarAdd" Translation="添加变量" />
