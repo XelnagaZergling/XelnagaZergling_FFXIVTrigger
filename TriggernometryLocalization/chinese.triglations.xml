@@ -1484,8 +1484,8 @@
     <TranslationEntry Key="StateForm/tabTableSession" Translation="Session" />
     <TranslationEntry Key="StateForm/tabTablePersistent" Translation="Persistent" />
     <TranslationEntry Key="StateForm/dataGridViewTextBoxColumn19" Translation="名称" />
-    <TranslationEntry Key="StateForm/dataGridViewTextBoxColumn20" Translation="行数" />
-    <TranslationEntry Key="StateForm/dataGridViewTextBoxColumn21" Translation="列数" />
+    <TranslationEntry Key="StateForm/dataGridViewTextBoxColumn20" Translation="列数" />
+    <TranslationEntry Key="StateForm/dataGridViewTextBoxColumn21" Translation="行数" />
     <TranslationEntry Key="StateForm/dataGridViewTextBoxColumn22" Translation="上次更改" />
     <TranslationEntry Key="StateForm/dataGridViewTextBoxColumn23" Translation="更改来源" />
     <TranslationEntry Key="StateForm/btnCallbackRefresh" Translation="刷新" />
